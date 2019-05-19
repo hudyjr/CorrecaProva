@@ -1,32 +1,43 @@
 public class Imovel {
+    private Data DataCompra;
     private Proprietario proprietario;
-    private Data dataCompra;
     private String tipo;
     
-    public void SetProprietario(Proprietario proprietario){
-       this.proprietario=proprietario;
+public void getmostrar(){
+    System.out.println (DataCompra);
+    System.out.println (proprietario);
+    System.out.println (tipo);
+}
+public boolean getinformarTipo(String tipo){
+    if (tipo.equals ("casa")){
+        return true;
     }
-    public void SetDataCompra(Data dataCompra){
-        this.dataCompra=dataCompra;
+    if (tipo.equals ("Apartamento")){
+        return true;
     }
-    public void SetTipo(String tipo){
-        this.tipo=tipo;
+    if (tipo.equals ("Sitio")){
+        return true;
     }
-    public Proprietario getProprietario(){
-        return this.proprietario;
-    }
-    public Data getDataCompra(){
-        return this.dataCompra;
-    }
-    public String getTipo(){
-        return this.tipo;
-    }
-    public void mostrar(){
-        System.out.println(this.proprietario);
-        System.out.println(this.dataCompra);
-        System.out.println(this.tipo);
-    }
-    public boolean informarTipo(String t){
-        
+    else{
+        return false;
     }
 }
+ public Data getDataCompra(){
+     return this.DataCompra;
+ }
+ public Proprietario getProprietario(){
+     return this.proprietario;
+ }
+ public String gettipo(){
+     return this.tipo;
+ }
+ public void setDatadaCompra(Data d){
+     this.DataCompra = d;
+ }
+ public void setProprietario(Proprietario p){
+     this.proprietario = p;
+ }
+ public void setTipo (String t){
+     this.tipo = t;
+ }}
+    

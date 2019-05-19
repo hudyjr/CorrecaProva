@@ -1,28 +1,38 @@
+
 public class Data {
+
     private int dia;
     private int mes;
     private int ano;
-    
-    public void SetDia(int dia){
-        this.dia=dia;
+
+    public void getmostrar() {
+
+        System.out.println(dia);
+        System.out.println(mes);
+        System.out.println(ano);
     }
-    public void SetMes(int mes){
-        this.mes=mes;
-    }
-    public void SetAno(int ano){
-        this.ano=ano;
-    }
-            
-    public int getDia(){
+
+    public int getdia() {
         return this.dia;
     }
-    public int getMes(){
+
+    public int getmes() {
         return this.mes;
     }
-    public int getAno(){
+
+    public int getano() {
         return this.ano;
     }
-    public void mostrar(){
-        System.out.println(this.getDia()+"/"+this.getMes()+"/"+this.getAno());
+
+    public void setdia(int d) {
+        this.dia = d;
+    }
+
+    public void setmes(int m) {
+        this.mes = m;
+    }
+
+    public void setano(int a) {
+        this.ano = a;
     }
 }
